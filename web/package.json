@@ -1,0 +1,62 @@
+{
+  "name": "linktime-fe-typical-web-app-web",
+  "version": "1.0.0",
+  "description": "Linktime typical web api",
+  "private": true,
+  "scripts": {
+    "dev": "PORT=19999 npx nodemon bin/run --config nodemon.json",
+    "start": "PORT=19999 node bin/run",
+    "pm2": "PORT=19999 npx pm2 start bin/run",
+    "doc": "npx apidoc -i controllers -o doc"
+  },
+  "dependencies": {
+    "ali-oss": "^6.0.2",
+    "axios": "^0.19.0",
+    "busboy": "^0.2.14",
+    "config": "^3.0.1",
+    "cron": "^1.6.0",
+    "csvtojson": "^2.0.8",
+    "debug": "^2.6.8",
+    "jsonfile": "^3.0.1",
+    "jwt-simple": "^0.5.6",
+    "kcors": "^1.3.2",
+    "koa": "^2.3.0",
+    "koa-bodyparser": "^2.0.1",
+    "koa-compress": "^2.0.0",
+    "koa-convert": "^1.2.0",
+    "koa-favicon": "^2.0.0",
+    "koa-json": "^1.1.1",
+    "koa-logger": "^2.0.1",
+    "koa-multer": "^1.0.2",
+    "koa-router": "^7.2.1",
+    "koa-static": "^3.0.0",
+    "mkdirp": "^0.5.1",
+    "node-fetch": "^2.3.0",
+    "path": "^0.12.7",
+    "pinyin": "^2.9.1",
+    "rimraf": "^2.6.1",
+    "runkoa": "^1.3.1",
+    "shelljs": "^0.7.8",
+    "thenby": "^1.2.6",
+    "url": "^0.11.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "apidoc": "^0.17.6",
+    "nodemon": "^1.12.0",
+    "pm2": "^3.5.0",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-config-vue": "^2.0.2",
+    "eslint-friendly-formatter": "^2.0.7",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^2.0.3",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^2.3.1",
+    "eslint-plugin-vue": "^4.7.1"
+  },
+  "apidoc": {
+    "title": "Linktime typical web api",
+    "url": ""
+  }
+}

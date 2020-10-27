@@ -1,0 +1,9 @@
+{
+    
+    "artifact-host": "http://192.168.255.6:8000",
+    "docker-machine-ip": "127.0.0.1",
+    "package-name": "bdos-data-service-web",
+    "package-version": "1.0",
+    "bdos-data-service-web-version": "1.0"
+}
+

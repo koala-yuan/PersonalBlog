@@ -1,0 +1,16 @@
+.DS_Store
+__pycache__
+node_modules/
+npm-debug.log
+publish.conf
+pid
+.idea/*
+*~
+\#*
+.\#*
+logs/
+upload/
+tests/
+doc/
+bak/
+*.tgz

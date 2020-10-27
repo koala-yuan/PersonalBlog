@@ -1,0 +1,34 @@
+{
+  "package-name": "linktime-fe-typical-web-app-web",
+  "image-name": "linktime-fe-typical-web-app-web",
+  "package-version": "1.0",
+  "git-branch": "master",
+  "docker-build": true,
+  "dependencies": {},
+  "servers": [
+    {
+      "server-name": "office",
+      "server-endpoint": "http://192.168.105.247:8000"
+    },
+    {
+      "server-name": "prod",
+      "server-endpoint": "http://172.20.4.212:8000"
+    },
+    {
+      "server-name": "tsingdao",
+      "server-endpoint": "http://47.104.230.183:8000"
+    },
+    {
+      "server-name": "shanghai",
+      "server-endpoint": "http://192.168.4.99:8000"
+    },
+    {
+      "server-name": "aliTest",
+      "server-endpoint": "http://192.168.4.93:8000"
+    },
+    {
+      "server-name": "aws",
+      "server-endpoint": "http://52.82.16.255:8000"
+    }
+  ]
+}

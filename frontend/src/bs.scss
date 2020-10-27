@@ -1,0 +1,90 @@
+// utils
+$inherit: inherit;
+$no_color: transparent;
+
+// background
+$bg_black: rgba(29, 29, 33, 1);
+$bg_white: rgb(255, 255, 255);
+$bg_inverse: rgb(49, 65, 88);
+$bg_yellow: rgb(252, 248, 226);
+$bg_dark: lighten($bg_inverse, 8%);
+$bg_light: lighten($bg_inverse, 60%);
+$bg_lighter: lighten($bg_inverse, 70%);
+
+// line
+$line_dark: lighten($bg_inverse, 5%);
+$line_light: lighten($bg_inverse, 70%);
+
+// fonts
+$font_family: "San Francisco", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+$font_white: $bg_white;
+$font_dark: $bg_inverse;
+$font_blue: #337ab7;
+$font_link_dark: #bfcbd9;
+$font_light: #9d9d9d;
+$font_lighter: lighten($font_light, 5%);
+
+// element UI
+$ele_font_blue: #20a0ff;
+
+$font: #17223c;
+$font-light: #606266;
+$font-lighter: #c0c4cc;
+
+$line: #e5e5e5;
+$border: #d9d9d9;
+
+
+// Override Colors
+$black:   #2e2b3f;
+$blue:    #2a62c4;
+$indigo:  #6610f2;
+$purple:  #7961f1;
+$pink:    #fb8381;
+$red:     #e1464e;
+$orange:  #ff6d2b;
+$yellow:  #f5a623;
+$green:   #1fbeae;
+$teal:    #69dba4;
+$cyan:    #17a2b8;
+
+$pre-color: #fff;
+
+$gray-300: $border;
+// Secondary Color
+$gray-600: #607182;
+
+// Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+
+/*
+ * Rebuild Bootstrap Classnames
+ */
+* {
+  outline: 0 none !important;
+}
+
+h6, .h6{
+  font-size: .9rem;
+}
+
+a {
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+  color: #6798ef;
+}
+
+pre {
+  background-color: rgba(36, 36, 42, 1);
+  padding: 5px;
+}
+
+.text-center th {
+  text-align: center;
+}
+
+.text-gray {
+  color: #ccc !important;
+}
