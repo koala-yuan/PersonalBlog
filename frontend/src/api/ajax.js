@@ -118,39 +118,6 @@ export class Ajax {
     }
   }
   /**
-   * Loading
-   *
-   * @param {any} opt
-   *
-   * @memberOf Ajax
-   */
-  loadingAction (processing = false) {
-    const options = this.options
-    const loading = Store.getters.loadingOptions
-    const params = options.loadingParams
-
-    if (options.processing) {
-      const process = options.processing || {}
-      set(process.obj, process.field, processing)
-    }
-
-    if (!options.loading) {
-      return false
-    }
-
-    if (processing) {
-      Store.dispatch('setLoadingOptions', {
-        text: params.text,
-        closable: params.closable,
-        show: loading.show + 1
-      })
-    } else if (loading.show > 0) {
-      Store.dispatch('setLoadingOptions', {
-        show: loading.show - 1
-      })
-    }
-  }
-  /**
    * Trigger the request
    *
    * @param {Object} opt

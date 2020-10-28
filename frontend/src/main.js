@@ -14,10 +14,6 @@ import VueMq from 'vue-mq'
 
 import { sync } from 'vuex-router-sync'
 
-import filters from '@/utils/filters'
-
-import i18n from '@/i18n'
-
 import App from '@/App'
 import router from '@/router'
 import store from '@/store'
@@ -34,10 +30,8 @@ if (NODE_ENV === 'production') {
 }
 
 Vue.use(ElementUI, {
-  i18n: (key, value) => i18n.t(key, value),
   size: 'small'
 })
-Vue.use(filters)
 Vue.use(VueMq, {
   breakpoints: {
     narrow: 1260,
@@ -52,7 +46,6 @@ const vm = new Vue({
   el: '#app',
   router,
   store,
-  i18n,
   render: h => h(App),
   computed: {},
   methods: {},

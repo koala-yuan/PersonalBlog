@@ -1,13 +1,15 @@
 <script>
 import LoadingMask from '@/components/loading'
+import NavBar from '@/components/navbar'
 
 export default {
   name: 'app',
   components: {
-    LoadingMask
+    LoadingMask,
+    NavBar
   },
   mounted () {
-    document.title = this.$t('common.brand')
+    document.title = 'Personal Blog'
   }
 }
 </script>
@@ -15,6 +17,12 @@ export default {
 <template lang="pug">
 #app
   .app-root
+    NavBar
     router-view
-  LoadingMask
+  //- LoadingMask
 </template>
+
+<style lang="scss">
+.app-root {
+}
+</style>
